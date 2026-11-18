@@ -1,0 +1,16 @@
+// Never sync SQLite databases or WAL/SHM shared-memory index files
+*.db
+*.db-wal
+*.db-shm
+*.db.bkp
+
+// Never sync system-internal user directories (e.g. user/__sync) or temp directory
+/temp
+/user/__*
+
+// Ignore atomic write staging files & Python bytecode
+*.tmp.sync.*
+*.tmp.*
+__pycache__
+*.pyc
+.git
